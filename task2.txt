@@ -1,0 +1,1 @@
+Hello! I am the example file, you can read me by writing "task2.txt" while executing Task2.java
