@@ -60,5 +60,12 @@ This task involves creating a simple Java-based contact management application t
 ### Code Implementation
 The Java program utilizes file handling and exception handling to manage contact information effectively. Contacts are stored in `contacts.txt`, and the program ensures that data is persistently saved and retrieved.
 
+### Exception Handling
+- If the contacts file (`contacts.txt`) is missing or cannot be read, the program informs the user that no existing contacts were found.
+- When saving contacts, any file writing errors (e.g., permission issues) are caught, and an appropriate error message is displayed.
+- If the user enters an invalid input, such as an empty name or phone number, the program allows them to retry.
+- When searching, editing, or deleting contacts, the program handles cases where no matching contact is found and provides meaningful feedback.
+- Proper resource management (`try-with-resources`) is used for reading and writing files to avoid resource leaks.
+
 ### Summary
 This task demonstrates file handling and error handling by developing a simple contact management system in Java. Users can add, view, search, edit, and delete contacts, ensuring data persistence through file storage.
